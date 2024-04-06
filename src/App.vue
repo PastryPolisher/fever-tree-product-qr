@@ -13,7 +13,9 @@ const showContent = ref(false)
 onBeforeMount(() => {
   // Dear visitor: there are better things to do than looking at source code
   // trivial password check
-  if (location.hostname !== 'localhost') {
+  if (location.hostname === 'localhost') {
+    showContent.value = true
+  } else {
     const password = window.prompt('Password')
     if (password === 'tonic') {
       showContent.value = true

@@ -7,7 +7,7 @@
 
   <header class="qrHeader">
       <a href="https://fever-tree.com/en_CA">
-      <img src="https://fevertree.s3.eu-west-2.amazonaws.com/product-qr/assets/logo-black.png"
+      <img :src="getImageUrl('logo-black.png')"
           alt="Fever Tree">
       </a>
   </header>
@@ -18,6 +18,7 @@
 <script setup lang="ts">
 import ProductBody from './ProductBody.vue'
 import { ref } from 'vue'
+import { getImageUrl } from '@/utilities'
 
 const preloadImages = ref([
   'https://fevertree.s3.eu-west-2.amazonaws.com/product-qr/assets/ptw/bottle.png',
