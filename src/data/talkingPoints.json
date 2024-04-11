@@ -1,0 +1,198 @@
+{
+   "cs": [
+      {
+         "text": "<span>Naturally-sourced</span> sea salt from Scotland",
+         "icon": "naturalSource"
+      },
+      {
+         "text": "<span>No artificial</span> flavours or colours",
+         "icon": "noArtificial"
+      },
+      {
+         "text": "<span>High levels</span> of fine carbonation",
+         "icon": "carbonation"
+      }
+   ],
+   "spg": [
+      {
+         "text": "<span>Naturally-sourced</span> grapefruit from southern United States",
+         "icon": "naturalSource"
+      },
+      {
+         "text": "<span>No artificial</span> flavours, colours, or sweeteners",
+         "icon": "noArtificial"
+      },
+      {
+         "text": "<span>Lower</span> in sugar <span>&amp;</span> calories",
+         "icon": "lowCal"
+      }
+   ],
+   "lgb": [
+      {
+         "text": "<span>Signature blend</span> of 3 distinct gingers",
+         "icon": "naturalSource"
+      },
+      {
+         "text": "<span>No artificial</span> flavours, colours, or sweeteners",
+         "icon": "noArtificial"
+      },
+      {
+         "text": "<span>Lower</span> in sugar <span>&amp;</span> calories",
+         "icon": "lowCal"
+      }
+   ],
+   "ltw": [
+      {
+         "text": "<span>Naturally-sourced</span> lemons from Sicily",
+         "icon": "naturalSource"
+      },
+      {
+         "text": "<span>No artificial</span> flavours, colours, or sweeteners",
+         "icon": "noArtificial"
+      },
+      {
+         "text": "<span>Certified</span> non-GMO",
+         "icon": "nonGmo"
+      }
+   ],
+   "mtw": [
+      {
+         "text": "<span>Naturally-sourced</span> lemon thyme <span>&amp;</span> Rosemary from Provence",
+         "icon": "naturalSource"
+      },
+      {
+         "text": "<span>No artificial</span> flavours, colours, or sweeteners",
+         "icon": "noArtificial"
+      },
+      {
+         "text": "<span>Certified</span> non-GMO",
+         "icon": "nonGmo"
+      }
+   ],
+   "etw": [
+      {
+         "text": "<span>Handpicked</span> English elderflowers",
+         "icon": "naturalSource"
+      },
+      {
+         "text": "<span>No artificial</span> flavours, colours, or sweeteners",
+         "icon": "noArtificial"
+      },
+      {
+         "text": "<span>Certified</span> non-GMO",
+         "icon": "nonGmo"
+      }
+   ],
+   "lctw": [
+      {
+         "text": "<span>Naturally-sourced</span> cucumber from Florida",
+         "icon": "naturalSource"
+      },
+      {
+         "text": "<span>No artificial</span> flavours, colours, or sweeteners",
+         "icon": "noArtificial"
+      },
+      {
+         "text": "<span>Lower</span> in sugar <span>&amp;</span> calories",
+         "icon": "lowCal"
+      }
+   ],
+   "lptw": [
+      {
+         "text": "<span>Naturally-sourced</span> Quinine from Central Africa",
+         "icon": "naturalSource"
+      },
+      {
+         "text": "<span>No artificial</span> flavours, colours, or sweeteners",
+         "icon": "noArtificial"
+      },
+      {
+         "text": "<span>Lower</span> in sugar <span>&amp;</span> calories",
+         "icon": "lowCal"
+      }
+   ],
+   "ptw": [
+      {
+         "text": "<span>Naturally-sourced</span> Quinine from Central Africa",
+         "icon": "naturalSource"
+      },
+      {
+         "text": "<span>No artificial</span> flavours, colours, or sweeteners",
+         "icon": "noArtificial"
+      },
+      {
+         "text": "<span>Certified</span> non-GMO",
+         "icon": "nonGmo"
+      }
+   ],
+   "ga": [
+      {
+         "text": "<span>Signature blend</span> of 3 distinct gingers",
+         "icon": "naturalSource"
+      },
+      {
+         "text": "<span>No artificial</span> flavours, colours, or sweeteners",
+         "icon": "noArtificial"
+      },
+      {
+         "text": "<span>Certified</span> non-GMO",
+         "icon": "nonGmo"
+      }
+   ],
+   "gb": [
+      {
+         "text": "<span>Signature blend</span> of 3 distinct gingers",
+         "icon": "naturalSource"
+      },
+      {
+         "text": "<span>No artificial</span> flavours, colours, or sweeteners",
+         "icon": "noArtificial"
+      },
+      {
+         "text": "<span>Certified</span> non-GMO",
+         "icon": "nonGmo"
+      }
+   ],
+   "ssl": [
+      {
+         "text": "<span>Naturally-sourced</span> lemons from Sicily",
+         "icon": "naturalSource"
+      },
+      {
+         "text": "<span>No artificial</span> flavours, colours, or sweeteners",
+         "icon": "noArtificial"
+      },
+      {
+         "text": "<span>Lower</span> in sugar <span>&amp;</span> calories",
+         "icon": "lowCal"
+      }
+   ],
+   "ly": [
+      {
+         "text": "<span>Naturally-sourced</span> Tahiti limes from Mexico <span>&amp;</span> Yuzu from Japan",
+         "icon": "naturalSource"
+      },
+      {
+         "text": "<span>No artificial</span> flavours, colours, or sweeteners",
+         "icon": "noArtificial"
+      },
+      {
+         "text": "<span>Lower</span> in sugar <span>&amp;</span> calories",
+         "icon": "lowCal"
+      }
+   ],
+   "dco": [
+      {
+         "text": "<span>Naturally-sourced</span> kola nut from Jamaica <span>&amp;</span> vanilla from Madagascar",
+         "icon": "naturalSource"
+      },
+      {
+         "text": "<span>No artificial</span> flavours, colours, or sweeteners",
+         "icon": "noArtificial"
+      },
+      {
+         "text": "<span>Certified<span> non-GMO",
+         "icon": "nonGmo"
+      }
+   ]
+}

@@ -1,11 +1,11 @@
 <template>
   <template v-if="showContent">
-    <ProductPage />
+    <ProductPage :current-product="'ptw'"/>
   </template>
 </template>
 
 <script setup lang="ts">
-import ProductPage from './components/ProductPage.vue'
+import ProductPage from '@/components/ProductPage.vue'
 import { onBeforeMount, ref } from 'vue'
 
 const showContent = ref(false)

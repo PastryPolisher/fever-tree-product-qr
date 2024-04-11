@@ -12,13 +12,17 @@
       </a>
   </header>
 
-  <ProductBody />
+  <ProductBody :current-product="currentProduct" />
 </template>
   
 <script setup lang="ts">
 import ProductBody from './ProductBody.vue'
-import { ref } from 'vue'
 import { getImageUrl } from '@/utilities'
+import { ref } from 'vue'
+
+defineProps<{
+  currentProduct: string
+}>()
 
 const preloadImages = ref([
   'https://fevertree.s3.eu-west-2.amazonaws.com/product-qr/assets/ptw/bottle.png',

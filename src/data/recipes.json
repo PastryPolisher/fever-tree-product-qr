@@ -1,0 +1,366 @@
+{
+  "cs": [
+    {
+      "title": "Vodka Soda",
+      "steps": [
+        "3/4 Club Soda",
+        "1/4 quality vodka",
+        "Lime wedge to garnish"
+      ]
+    },
+    {
+      "title": "Tequila Soda",
+      "steps": [
+        "3/4 Club Soda",
+        "1/4 quality tequila",
+        "Lime wedge to garnish"
+      ]
+    },
+    {
+      "title": "Faux-mosa",
+      "steps": [
+        "1/2 Club Soda",
+        "1/2 orange juice",
+        "Orange wheel to garnish"
+      ]
+    }
+  ],
+  "spg": [
+    {
+      "title": "Paloma",
+      "steps": [
+        "3/4 Sparkling Pink Grapefruit",
+        "1/4 quality tequila",
+        "Grapefruit wedge to garnish"
+      ]
+    },
+    {
+      "title": "Signature Pink Spritz",
+      "steps": [
+        "3/4 Sparkling Pink Grapefruit",
+        "1/4 quality vodka",
+        "Grapefruit wheel to garnish"
+      ]
+    },
+    {
+      "title": "Pink Dame",
+      "steps": [
+        "3/4 Sparkling Pink Grapefruit",
+        "1/4 aperitif wine",
+        "Grapefruit wheel to garnish"
+      ]
+    }
+  ],
+  "lgb": [
+    {
+      "title": "Classic Mule",
+      "steps": [
+        "3/4 Fever-Tree Ginger Beer",
+        "1/4 quality vodka",
+        "Garnish with half a lime"
+      ]
+    },
+    {
+      "title": "Dark <span>&amp;</span> Stormy",
+      "steps": [
+        "3/4 Fever-Tree Ginger Beer",
+        "1/4 quality dark rhum",
+        "Garnish with a lime wheel"
+      ]
+    },
+    {
+      "title": "Pineapple Mule",
+      "steps": [
+        "3/4 Fever-Tree Ginger Beer",
+        "1/4 pineapple juice",
+        "Garnish with half a lime"
+      ]
+    }
+  ],
+  "ltw": [
+    {
+      "title": "Berry Tonic",
+      "steps": [
+        "3/4 Fever-Tree Lemon Tonic",
+        "1/4 berry gin",
+        "Lemon wedge to garnish"
+      ]
+    },
+    {
+      "title": "Citrus Tonic",
+      "steps": [
+        "3/4 Fever-Tree Lemon Tonic",
+        "1/4 orange liqueur",
+        "Orange twist to garnish"
+      ]
+    },
+    {
+      "title": "Blueberry Tonic",
+      "steps": [
+        "3/4 Fever-Tree Lemon Tonic",
+        "1/4 fresh blueberries, muddles",
+        "Blueberries to garnish"
+      ]
+    }
+  ],
+  "mtw": [
+    {
+      "title": "Herbal Vodka Tonic",
+      "steps": [
+        "3/4 Fever-Tree Mediterranean Tonic",
+        "1/4 quality vodka",
+        "Twist of lemon to garnish"
+      ]
+    },
+    {
+      "title": "Tequila <span>&amp;</span> Tonic",
+      "steps": [
+        "3/4 Fever-Tree Mediterranean Tonic",
+        "1/4 quality tequila",
+        "Orange twist to garnish"
+      ]
+    },
+    {
+      "title": "Cranberry <span>&amp;</span> Tonic",
+      "steps": [
+        "3/4 Fever-Tree Mediterranean Tonic",
+        "1/4 cranberry juice",
+        "Thyme sprig to garnish"
+      ]
+    }
+  ],
+  "etw": [
+    {
+      "title": "Classic Gin <span>&amp;</span> Tonic",
+      "steps": [
+        "3/4 Fever-Tree Elderflower Tonic",
+        "1/4 quality gin",
+        "Grapefruit half wheel to garnish"
+      ]
+    },
+    {
+      "title": "Garden Tonic",
+      "steps": [
+        "3/4 Fever-Tree Elderflower Tonic",
+        "1/4 aperitif wine",
+        "Grapefruit half wheel to garnish"
+      ]
+    },
+    {
+      "title": "Espresso Tonic",
+      "steps": [
+        "3/4 Fever-Tree Elderflower Tonic",
+        "1/4 espresso",
+        "Grapefruit half wheel to garnish"
+      ]
+    }
+  ],
+  "lctw": [
+    {
+      "title": "Classic Gin <span>&amp;</span> Tonic",
+      "steps": [
+        "3/4 Fever-Tree Light Cucumber Tonic",
+        "1/4 quality gin",
+        "CUCUMBER RIBBON"
+      ]
+    },
+    {
+      "title": "Garden Tonic",
+      "steps": [
+        "3/4 Fever-Tree Light Cucumber Tonic",
+        "1/4 aperitif wine",
+        "Rosemary sprig"
+      ]
+    },
+    {
+      "title": "Espresso Tonic",
+      "steps": [
+        "3/4 Fever-Tree Light Cucumber Tonic",
+        "1/4 espresso",
+        "Lemon wedge to garnish"
+      ]
+    }
+  ],
+  "lptw": [
+    {
+      "title": "Classic Gin <span>&amp;</span> Tonic",
+      "steps": [
+        "3/4 Fever-Tree Light Tonic",
+        "1/4 quality gin",
+        "Lime wedge to garnish"
+      ]
+    },
+    {
+      "title": "Bitter <span>&amp;</span> Tonic",
+      "steps": [
+        "3/4 Fever-Tree Light Tonic",
+        "1/4 bitter aperitif",
+        "Orange wheel to garnish"
+      ]
+    },
+    {
+      "title": "Espresso Tonic",
+      "steps": [
+        "3/4 Fever-Tree Light Tonic",
+        "1/4 espresso",
+        "Orange wheel to garnish"
+      ]
+    }
+  ],
+  "ptw": [
+    {
+      "title": "Classic Gin <span>&amp;</span> Tonic",
+      "steps": [
+        "3/4 Fever-Tree Premium Tonic",
+        "1/4 quality gin",
+        "Grapefruit half wheel to garnish"
+      ]
+    },
+    {
+      "title": "Bitter <span>&amp;</span> Tonic",
+      "steps": [
+        "3/4 Fever-Tree Premium Tonic",
+        "1/4 bitter aperitif",
+        "Orange wheel to garnish"
+      ]
+    },
+    {
+      "title": "Espresso Tonic",
+      "steps": [
+        "3/4 Fever-Tree Premium Tonic",
+        "1/4 espresso",
+        "Orange wheel to garnish"
+      ]
+    }
+  ],
+  "ga": [
+    {
+      "title": "Whiskey Ginger",
+      "steps": [
+        "3/4 Fever-Tree Ginger Ale",
+        "1/4 quality whiskey",
+        "Garnish with a lime wedge"
+      ]
+    },
+    {
+      "title": "Canadian Shandy",
+      "steps": [
+        "3/4 Fever-Tree Ginger Ale",
+        "1/4 lager beer",
+        "Garnish with an orange twist"
+      ]
+    },
+    {
+      "title": "Ginger <span>&amp;</span> Cranberry",
+      "steps": [
+        "3/4 Fever-Tree Ginger Ale",
+        "1/4 cranberry juice",
+        "Garnish with a rosemary sprig"
+      ]
+    }
+  ],
+  "gb": [
+    {
+      "title": "Classic Mule",
+      "steps": [
+        "Â¾ Fever-Tree Ginger Beer",
+        "Â¼ quality vodka",
+        "Garnish with half a lime"
+      ]
+    },
+    {
+      "title": "Dark <span>&amp;</span> Stormy",
+      "steps": [
+        "Â¾ Fever-Tree Ginger Beer",
+        "Â¼ quality dark ruhm",
+        "Garnish with a lime wheel"
+      ]
+    },
+    {
+      "title": "Pineapple Mule",
+      "steps": [
+        "Â¾ Fever-Tree Ginger Beer",
+        "Â¼ pineapple juice",
+        "Garnish with half a lime"
+      ]
+    }
+  ],
+  "ssl": [
+    {
+      "title": "Vodka Lemonade",
+      "steps": [
+        "3/4 Sparkling Sicilian Lemonade",
+        "1/4 quality vodka",
+        "Lemon wedge to garnish"
+      ]
+    },
+    {
+      "title": "Bourbon Basil Lemonade",
+      "steps": [
+        "3/4 Sparkling Sicilian Lemonade",
+        "1/4 quality bourbon",
+        "Basil leaves to garnish"
+      ]
+    },
+    {
+      "title": "Sparkling Lemonade",
+      "steps": [
+        "3/4 Sparkling Sicilian Lemonade",
+        "Lemon twist to garnish"
+      ]
+    }
+  ],
+  "ly": [
+    {
+      "title": "Ultimate Vodka <br/> Lime Soda",
+      "steps": [
+        "Â¾ Fever-Tree Sparkling Lime&nbsp;&amp;&nbsp;Yuzu",
+        "Â¼ vodka",
+        "Lime wedge to garnish"
+      ]
+    },
+    {
+      "title": "Sparkling Margarita",
+      "steps": [
+        "Â¾ Fever-Tree Sparkling Lime&nbsp;&amp;&nbsp;Yuzu",
+        "Â¼ tequila",
+        "Lime wedge to garnish",
+        "Optional: salt rim"
+      ]
+    },
+    {
+      "title": "Orange Crushie",
+      "steps": [
+        "Â¾ Fever-Tree Sparkling Lime&nbsp;&amp;&nbsp;Yuzu",
+        "Â¼ bitter orange liqueur/aperitif",
+        "Orange wheel to garnish"
+      ]
+    }
+  ],
+  "dco": [
+    {
+      "title": "Rum <span>&amp;</span> Cola",
+      "steps": [
+        "3/4 Fever-Tree Distillers Cola",
+        "1/4 quality rum",
+        "Lime wedge to garnish"
+      ]
+    },
+    {
+      "title": "Whisky Cola",
+      "steps": [
+        "3/4 Fever-Tree Distillers Cola",
+        "1/4 quality whisky",
+        "Lime wedge to garnish"
+      ]
+    },
+    {
+      "title": "Nostalgia Cola",
+      "steps": [
+        "3/4 Fever-Tree Distillers Cola",
+        "1/4 cherry or vanilla syrup",
+        "Lemon twist to garnish"
+      ]
+    }
+  ]
+}
