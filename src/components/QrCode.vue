@@ -1,9 +1,8 @@
 <template>
   <div class="qrCode">
-    <h2 :style="headerStyle">{{ headerContent }}</h2>
+    <h2>{{ headerContent }}</h2>
     <img
       :src="qrUrl"
-      :style="qrStyle"
       alt="qr code"
     />
   </div>
@@ -11,20 +10,21 @@
 
 <script setup lang="ts">
 import { getImageUrl } from '@/utilities'
-import { computed, ref } from 'vue';
+import { computed } from 'vue';
+import products from '@/data/products.json'
 
 const props = defineProps<{
   currentProduct: string
 }>()
 
-const headerStyle = computed(() => `background-color: var(--ft-${props.currentProduct})`)
-const headerContent = ref('DRINK NAME HERE')
-
 const qrUrl = computed(() => getImageUrl(`${props.currentProduct}/qr.png`))
-const qrStyle = computed(() => `border-color: var(--ft-${props.currentProduct})`)
+const headerContent = computed(() => {
+  const productDetails = products.filter((product) => product.code === props.currentProduct)?.[0]
+  return productDetails?.name || ''
+})
 </script>
 
-<style lang="scss">
+<style scroped lang="scss">
 .qrCode {
   display: flex;
 	max-width: 14rem;
@@ -38,12 +38,13 @@ const qrStyle = computed(() => `border-color: var(--ft-${props.currentProduct})`
     text-align: center;
     color: #fff;
     padding: 1rem;
+    background-color: var(--product-color);
   }
 
   img {
     max-height: 16rem;
     max-width: 16rem;
-    border: 1rem solid white;
+    border: 1rem solid var(--product-color);
   }
 }
 </style>

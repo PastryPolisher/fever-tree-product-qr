@@ -1,5 +1,5 @@
 <template>
-  <div class="product-body" :style="bodyStyle">
+  <div class="product-body">
 
     <!-- Non-mobile: show QR code -->
     <QrCode v-if="!isMobile"
@@ -27,8 +27,6 @@ const isPortrait = ref(window.matchMedia('(orientation: portrait)').matches)
 // TODO: what's this for?
 const justRotated = ref(false)
 
-const bodyStyle = computed(() => `background-color: var(--ft-${props.currentProduct}-light)`)
-
 function setIsPortrait(event: MediaQueryListEvent) {
   isPortrait.value = event.matches;
   setTimeout(() => { justRotated.value = true }, 800);
@@ -51,6 +49,7 @@ onBeforeUnmount(() => {
 	justify-content: space-around;
 	height: calc(100vh - var(--header-height));
 	height: calc(100dvh - var(--header-height));
-	width: 100%
+	width: 100%;
+  background-color: var(--product-color-light);
 }
 </style>

@@ -1,0 +1,72 @@
+[
+  {
+    "name": "Premium Club Soda",
+    "code": "cs",
+    "url": "https://fever-tree.com/en_CA/products/club-soda"
+  },
+  {
+    "name": "Distillers Cola",
+    "code": "dco",
+    "url": "https://fever-tree.com/en_CA/products/distillers-cola"
+  },
+  {
+    "name": "Elderflower Tonic",
+    "code": "etw",
+    "url": "https://fever-tree.com/en_CA/products/elderflower-tonic"
+  },
+  {
+    "name": "Premium Ginger Ale",
+    "code": "ga",
+    "url": "https://fever-tree.com/en_CA/products/ginger-ale"
+  },
+  {
+    "name": "Premium Ginger Beer",
+    "code": "gb",
+    "url": "https://fever-tree.com/en_CA/products/ginger-beer"
+  },
+  {
+    "name": "Light Cucumber Tonic",
+    "code": "lctw",
+    "url": "https://fever-tree.com/en_CA/products/light-cucumber-tonic"
+  },
+  {
+    "name": "Light Ginger Beer",
+    "code": "lgb",
+    "url": "https://fever-tree.com/en_CA/products/refreshingly-light-ginger-beer"
+  },
+  {
+    "name": "Light Premium Tonic",
+    "code": "lptw",
+    "url": "https://fever-tree.com/en_CA/products/light-tonic"
+  },
+  {
+    "name": "Lemon Tonic",
+    "code": "ltw",
+    "url": "https://fever-tree.com/en_CA/products/lemon-tonic"
+  },
+  {
+    "name": "Mediterranean Tonic",
+    "code": "mtw",
+    "url": "https://fever-tree.com/en_CA/products/mediterranean-tonic"
+  },
+  {
+    "name": "Premium Tonic",
+    "code": "ptw",
+    "url": "https://fever-tree.com/en_CA/products/premium-tonic"
+  },
+  {
+    "name": "Sparkling Lime & Yuzu",
+    "code": "ly",
+    "url": "https://fever-tree.com/en_CA/products/sparkling-lime-yuzu"
+  },
+  {
+    "name": "Sparkling Pink Grapefruit",
+    "code": "spg",
+    "url": "https://fever-tree.com/en_CA/products/sparkling-pink-grapefruit"
+  },
+  {
+    "name": "Sparkling Sicilian Lemonade",
+    "code": "ssl",
+    "url": "https://fever-tree.com/en_CA/products/Sicilian-Lemonade"
+  }
+]

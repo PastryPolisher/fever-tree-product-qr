@@ -84,11 +84,10 @@
 import { ref } from 'vue';
 
 const props = defineProps<{
-  currentProduct: string,
   iconName: string
 }>()
 
-const pathFill = ref(`var(--ft-${props.currentProduct})`)
+const pathFill = ref('var(--product-color)')
 </script>
 
 <style lang="scss">

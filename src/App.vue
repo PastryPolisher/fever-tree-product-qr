@@ -1,6 +1,6 @@
 <template>
   <template v-if="showContent">
-    <ProductPage :current-product="'ptw'"/>
+    <ProductPage :current-product="currentProduct"/>
   </template>
 </template>
 
@@ -9,6 +9,7 @@ import ProductPage from '@/components/ProductPage.vue'
 import { onBeforeMount, ref } from 'vue'
 
 const showContent = ref(false)
+const currentProduct = ref('ptw')
 
 onBeforeMount(() => {
   // Dear visitor: there are better things to do than looking at source code
@@ -23,6 +24,11 @@ onBeforeMount(() => {
       window.location.href = 'https://www.google.com'
     }
   }
+
+  // set product colour
+  const root = document.documentElement;
+  root.style.setProperty('--product-color', `var(--ft-${currentProduct.value})`)
+  root.style.setProperty('--product-color-light', `var(--ft-${currentProduct.value}-light)`)
 })
 
 </script>

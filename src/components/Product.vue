@@ -1,17 +1,51 @@
 <template>
   <div class="product">
-    <TalkingPoints
-      :currentProduct="currentProduct"
-    />
+    <TalkingPoints :current-product="currentProduct" />
+
+    <div class="body">
+      <img class="bottle" :src="bottleUrl" />
+
+      <!-- TODO: recipes -->
+      <Recipes :current-product="currentProduct" />
+    </div>
+
+    <div class="qr-cta">
+      <a v-for="(button, index) in ctaButtons"
+        class="button"
+        :href="button.url"
+        :key="'cta-' + index">
+        {{ button.text }}
+      </a>
+    </div>
   </div>
 </template>
 
 <script setup lang="ts">
+import Recipes from '@/components/Product/Recipes.vue'
 import TalkingPoints from '@/components/Product/TalkingPoints.vue';
+import products from '@/data/products.json'
+import { getImageUrl } from '@/utilities'
+import { computed } from 'vue';
 
 const props = defineProps<{
   currentProduct: string
 }>()
+
+const bottleUrl = computed(() => getImageUrl(`${props.currentProduct}/bottle.png`))
+const ctaButtons = computed(() => {
+  const product = products.filter((pd) => pd.code === props.currentProduct)?.[0]
+  if (product == null) { return [] }
+
+  return [{
+    text: 'Learn More',
+    url: product.url
+  }, {
+    text: 'Where to Buy',
+    // TODO: get correct region
+    url: 'https://fever-tree.com/en_CA/where-to-buy'
+  }]
+
+})
 </script>
 
 <style lang="scss">
@@ -37,6 +71,7 @@ const props = defineProps<{
       margin: .5rem .7rem;
       font-family: agenda, sans-serif;
       display: inline-block;
+      background-color: var(--product-color);
     }
   }
 

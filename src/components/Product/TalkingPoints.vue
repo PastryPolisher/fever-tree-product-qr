@@ -7,7 +7,6 @@
         
         <div class="icon">
           <PointIcon
-            :current-product="currentProduct"
             :icon-name="point.icon"
           />
         </div>
