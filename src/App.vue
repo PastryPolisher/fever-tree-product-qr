@@ -1,15 +1,17 @@
 <template>
   <template v-if="showContent">
-    <ProductPage :current-product="currentProduct"/>
+    <ProductPage />
   </template>
 </template>
 
 <script setup lang="ts">
 import ProductPage from '@/components/ProductPage.vue'
-import { onBeforeMount, ref } from 'vue'
+import { onBeforeMount, provide, ref } from 'vue'
 
 const showContent = ref(false)
+// TODO: get this from url
 const currentProduct = ref('ptw')
+provide('currentProduct', currentProduct)
 
 onBeforeMount(() => {
   // Dear visitor: there are better things to do than looking at source code
@@ -32,7 +34,3 @@ onBeforeMount(() => {
 })
 
 </script>
-
-<style scoped lang="scss">
-
-</style>

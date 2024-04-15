@@ -2,25 +2,25 @@
   <div class="product-body">
 
     <!-- Non-mobile: show QR code -->
-    <QrCode v-if="!isMobile"
-      :current-product="currentProduct"
-    />
+    <QrCode v-if="!isMobile" />
 
     <RotateDevice v-else-if="!isPortrait" />
 
-    <Product v-else :current-product="currentProduct" />
+    <template v-else>
+      <Fizzle />
+      <Garnish />
+      <Product />
+    </template>
   </div>
 </template>
 
 <script setup lang="ts">
+import Fizzle from '@/components/Product/Fizzle.vue'
+import Garnish from '@/components/Product/Garnish.vue'
 import Product from '@/components/Product.vue'
 import QrCode from '@/components/QrCode.vue'
 import RotateDevice from '@/components/RotateDevice.vue'
-import { computed, onBeforeMount, onBeforeUnmount, ref } from 'vue'
-
-const props = defineProps<{
-  currentProduct: string
-}>()
+import { onBeforeMount, onBeforeUnmount, ref } from 'vue'
 
 const isMobile = ref(/Android|iPhone/.test(navigator.userAgent))
 const isPortrait = ref(window.matchMedia('(orientation: portrait)').matches)

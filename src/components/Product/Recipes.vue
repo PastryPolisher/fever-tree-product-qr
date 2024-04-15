@@ -29,19 +29,17 @@
 <script setup lang="ts">
 import 'vue3-carousel/dist/carousel.css'
 import { Carousel, Slide, Pagination } from 'vue3-carousel'
-import { computed } from 'vue';
+import { computed, inject, type Ref } from 'vue';
 import { type IProductRecipes } from '@/utilities/types'
 import { getImageUrl } from '@/utilities';
 import productRecipes from '@/data/recipes.json'
 
-const props = defineProps<{
-  currentProduct: string
-}>()
+const currentProduct = inject('currentProduct') as Ref<string>
 
-const recipes = computed(() => (productRecipes as IProductRecipes)[props.currentProduct])
+const recipes = computed(() => (productRecipes as IProductRecipes)[currentProduct.value])
 
 function cocktailImage(recipeIndex: number) {
-  const imageUrl = getImageUrl(`${props.currentProduct}/recipe-${recipeIndex}.png`)
+  const imageUrl = getImageUrl(`${currentProduct.value}/recipe-${recipeIndex}.png`)
   return `background-image: url(${imageUrl})`
 }
 </script>

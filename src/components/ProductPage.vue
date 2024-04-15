@@ -1,44 +1,45 @@
 <template>
-  <img v-for="(image, index) in preloadImages"
-      :key="'preload-' + index"
-      :src="image"
-      :style="preloadImagesStyle"
-  />
+  <img v-for="(image, index) in preloadImageNames"
+    class="preload-image"
+    :key="'preload-' + index"
+    :src="getImageUrl(`${currentProduct}/${image}`)" />
 
-  <header class="qrHeader">
-      <a href="https://fever-tree.com/en_CA">
-      <img :src="getImageUrl('logo-black.png')"
-          alt="Fever Tree">
-      </a>
+  <header class="qr-header">
+    <a href="https://fever-tree.com/en_CA">
+      <img :src="getImageUrl('logo-black.png') " alt="Fever Tree">
+    </a>
   </header>
 
-  <ProductBody :current-product="currentProduct" />
+  <ProductBody />
 </template>
   
 <script setup lang="ts">
 import ProductBody from './ProductBody.vue'
 import { getImageUrl } from '@/utilities'
-import { ref } from 'vue'
+import { inject, ref, type Ref } from 'vue'
 
-defineProps<{
-  currentProduct: string
-}>()
+const currentProduct = inject('currentProduct') as Ref<string>
 
-const preloadImages = ref([
-  'https://fevertree.s3.eu-west-2.amazonaws.com/product-qr/assets/ptw/bottle.png',
-  'https://fevertree.s3.eu-west-2.amazonaws.com/product-qr/assets/ptw/garnish-1.png',
-  'https://fevertree.s3.eu-west-2.amazonaws.com/product-qr/assets/ptw/garnish-2.png',
-  'https://fevertree.s3.eu-west-2.amazonaws.com/product-qr/assets/ptw/garnish-cluster.png',
+const preloadImageNames = ref([
+  'bottle.png',
+  'garnish-1.png',
+  'garnish-2.png',
+  'garnish-cluster.png'
 ])
-
-const preloadImagesStyle = ref('visibility: hidden; position: absolute; height: 1px; width: 1px; z-index: -1;')
 
 // TODO: set page title depending on drink selected
 </script>
   
 <style scoped lang="scss">
+.preload-image {
+  visibility: hidden;
+  position: absolute;
+  height: 1px;
+  width: 1px;
+  z-index: -1;
+}
 
-.qrHeader {
+.qr-header {
   height: var(--header-height);
   text-align: center;
   padding: 0.5rem;

@@ -10,16 +10,14 @@
 
 <script setup lang="ts">
 import { getImageUrl } from '@/utilities'
-import { computed } from 'vue';
+import { computed, inject, type Ref } from 'vue';
 import products from '@/data/products.json'
 
-const props = defineProps<{
-  currentProduct: string
-}>()
+const currentProduct = inject('currentProduct') as Ref<string>
 
-const qrUrl = computed(() => getImageUrl(`${props.currentProduct}/qr.png`))
+const qrUrl = computed(() => getImageUrl(`${currentProduct.value}/qr.png`))
 const headerContent = computed(() => {
-  const productDetails = products.filter((product) => product.code === props.currentProduct)?.[0]
+  const productDetails = products.filter((product) => product.code === currentProduct.value)?.[0]
   return productDetails?.name || ''
 })
 </script>

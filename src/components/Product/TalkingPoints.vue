@@ -20,25 +20,12 @@
 <script setup lang="ts">
 import talkingPoints from '@/data/talkingPoints.json'
 import PointIcon from '@/components/Product/PointIcon.vue'
-import { ref } from 'vue';
+import { inject, ref, type Ref } from 'vue';
 import { type IProductPoints } from '@/utilities/types'
 
-const props = defineProps<{
-  currentProduct: string
-}>()
-
-const productPoints = ref((talkingPoints as IProductPoints)[props.currentProduct])
-
-// const iconTypeSet = new Set()
-// Object.values(talkingPoints).forEach((points) => points.forEach(point => iconTypeSet.add(point.icon)))
-// console.log(Array.from(iconTypeSet))
-/*
-v "naturalSource"
-v "noArtificial"
-v "carbonation"
-v "lowCal"
-v "nonGmo"
-*/
+const currentProduct = inject('currentProduct') as Ref<string>
+  
+const productPoints = ref((talkingPoints as IProductPoints)[currentProduct.value])
 </script>
 
 <style lang="scss">

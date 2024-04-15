@@ -1,12 +1,10 @@
 <template>
   <div class="product">
-    <TalkingPoints :current-product="currentProduct" />
+    <TalkingPoints />
 
     <div class="body">
       <img class="bottle" :src="bottleUrl" />
-
-      <!-- TODO: recipes -->
-      <Recipes :current-product="currentProduct" />
+      <Recipes />
     </div>
 
     <div class="qr-cta">
@@ -25,15 +23,13 @@ import Recipes from '@/components/Product/Recipes.vue'
 import TalkingPoints from '@/components/Product/TalkingPoints.vue';
 import products from '@/data/products.json'
 import { getImageUrl } from '@/utilities'
-import { computed } from 'vue';
+import { computed, inject, type Ref } from 'vue';
 
-const props = defineProps<{
-  currentProduct: string
-}>()
+const currentProduct = inject('currentProduct') as Ref<string>
 
-const bottleUrl = computed(() => getImageUrl(`${props.currentProduct}/bottle.png`))
+const bottleUrl = computed(() => getImageUrl(`${currentProduct.value}/bottle.png`))
 const ctaButtons = computed(() => {
-  const product = products.filter((pd) => pd.code === props.currentProduct)?.[0]
+  const product = products.filter((pd) => pd.code === currentProduct.value)?.[0]
   if (product == null) { return [] }
 
   return [{
