@@ -9,8 +9,7 @@ import ProductPage from '@/components/ProductPage.vue'
 import { onBeforeMount, provide, ref } from 'vue'
 
 const showContent = ref(false)
-// TODO: get this from url
-const currentProduct = ref('ptw')
+const currentProduct = ref((document as any).product || 'ptw')
 provide('currentProduct', currentProduct)
 
 onBeforeMount(() => {
