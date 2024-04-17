@@ -5,7 +5,7 @@
     :src="getImageUrl(`${currentProduct}/${image}`)" />
 
   <header class="qr-header">
-    <a href="https://fever-tree.com/en_CA">
+    <a :href="getOriginLocale()">
       <img :src="getImageUrl('logo-black.png') " alt="Fever Tree">
     </a>
   </header>
@@ -15,7 +15,7 @@
   
 <script setup lang="ts">
 import ProductBody from './ProductBody.vue'
-import { getImageUrl } from '@/utilities'
+import { getImageUrl, getOriginLocale } from '@/utilities'
 import { inject, ref, type Ref } from 'vue'
 
 const currentProduct = inject('currentProduct') as Ref<string>

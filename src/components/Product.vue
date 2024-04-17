@@ -22,11 +22,11 @@
 import Recipes from '@/components/Product/Recipes.vue'
 import TalkingPoints from '@/components/Product/TalkingPoints.vue';
 import products from '@/data/products.json'
-import { getImageUrl } from '@/utilities'
-import { computed, inject, type Ref } from 'vue';
+import { getImageUrl, getOriginLocale } from '@/utilities'
+import { computed, inject, ref, type Ref } from 'vue';
 
 const currentProduct = inject('currentProduct') as Ref<string>
-
+const pathPrefix = ref(getOriginLocale())
 const bottleUrl = computed(() => getImageUrl(`${currentProduct.value}/bottle.png`))
 const ctaButtons = computed(() => {
   const product = products.filter((pd) => pd.code === currentProduct.value)?.[0]
@@ -34,11 +34,10 @@ const ctaButtons = computed(() => {
 
   return [{
     text: 'Learn More',
-    url: product.url
+    url: `${pathPrefix.value}/products/${product.slug}`
   }, {
     text: 'Where to Buy',
-    // TODO: get correct region
-    url: 'https://fever-tree.com/en_CA/where-to-buy'
+    url: `${pathPrefix.value}/where-to-buy`
   }]
 
 })
